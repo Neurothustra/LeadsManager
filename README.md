@@ -4,5 +4,5 @@ A microservice used in the retrieval of leads (in this example, higher education
 
 The models are currently inconsistent in design, and these may change but I also like having the annotations in there to demonstrate how to map the names within MVC.
 
-The primary function of this app was , originally, to make server as an API for third-party vendors to deliver leads packages directly to the client's DB, but things evolved to the point where API functions were no longer necessary, and the app served as a getter for the leads info from multiple internal sources. Upon retrieval, each lead could be converted to XML, which was required in a specific XML schema (see ToXml.cs) so that the submission to Talisma
+The primary function of this app was, originally, to serve as an API for third-party vendors to deliver leads packages directly to the client's DB, but things evolved to the point where API functions were no longer necessary, and the app served as a getter for the leads info from multiple internal sources. Upon retrieval, each lead could be converted to XML, which was required in a specific XML schema (see ToXml.cs) so that the submission to Talisma
 (talisma.com) would not be rejected. Other features have not been added to the app, such as automated Talisma submissions and bulk manual submissions.
