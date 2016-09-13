@@ -1,0 +1,100 @@
+@model LeadsManager.Models.Talisma
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Talisma</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.bHasAttachment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.bHasAttachment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.mMsgContent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.mMsgContent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nAliasID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nAliasID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nDeliveryStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nDeliveryStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nEventID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nEventID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nLanguageID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nLanguageID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nMailType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nMailType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nTeamID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nTeamID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tBcc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tBcc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tCc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tCc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tFrom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tFrom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tSubject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tSubject)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tTo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tTo)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

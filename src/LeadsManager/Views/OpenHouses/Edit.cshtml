@@ -1,0 +1,267 @@
+@model LeadsManager.Models.OpenHouse
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>OpenHouse</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="id" />
+        <div class="form-group">
+            <label asp-for="DateSynced" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="DateSynced" class="form-control" />
+                <span asp-validation-for="DateSynced" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="IsSynced" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="IsSynced" class="form-control" />
+                <span asp-validation-for="IsSynced" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ad_type" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ad_type" class="form-control" />
+                <span asp-validation-for="ad_type" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="apartment_number" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="apartment_number" class="form-control" />
+                <span asp-validation-for="apartment_number" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="city" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="city" class="form-control" />
+                <span asp-validation-for="city" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="confirm_email" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="confirm_email" class="form-control" />
+                <span asp-validation-for="confirm_email" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="country" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="country" class="form-control" />
+                <span asp-validation-for="country" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="email_address" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="email_address" class="form-control" />
+                <span asp-validation-for="email_address" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employer_name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employer_name" class="form-control" />
+                <span asp-validation-for="employer_name" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employer_name_other" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employer_name_other" class="form-control" />
+                <span asp-validation-for="employer_name_other" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="first_name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="first_name" class="form-control" />
+                <span asp-validation-for="first_name" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="how_did_you_hear" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="how_did_you_hear" class="form-control" />
+                <span asp-validation-for="how_did_you_hear" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="last_name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="last_name" class="form-control" />
+                <span asp-validation-for="last_name" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="maiden_name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="maiden_name" class="form-control" />
+                <span asp-validation-for="maiden_name" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="middle_name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="middle_name" class="form-control" />
+                <span asp-validation-for="middle_name" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="military_branch" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="military_branch" class="form-control" />
+                <span asp-validation-for="military_branch" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="name_of_event" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="name_of_event" class="form-control" />
+                <span asp-validation-for="name_of_event" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="name_of_state" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="name_of_state" class="form-control" />
+                <span asp-validation-for="name_of_state" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="open_house_session" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="open_house_session" class="form-control" />
+                <span asp-validation-for="open_house_session" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="other_country" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="other_country" class="form-control" />
+                <span asp-validation-for="other_country" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="primary_phone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="primary_phone" class="form-control" />
+                <span asp-validation-for="primary_phone" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="primary_phone_type" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="primary_phone_type" class="form-control" />
+                <span asp-validation-for="primary_phone_type" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="program_concentration" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="program_concentration" class="form-control" />
+                <span asp-validation-for="program_concentration" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="program_degree" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="program_degree" class="form-control" />
+                <span asp-validation-for="program_degree" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="programs_interested" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="programs_interested" class="form-control" />
+                <span asp-validation-for="programs_interested" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="referral_source" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="referral_source" class="form-control" />
+                <span asp-validation-for="referral_source" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="referred_by" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="referred_by" class="form-control" />
+                <span asp-validation-for="referred_by" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="referred_by_whom" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="referred_by_whom" class="form-control" />
+                <span asp-validation-for="referred_by_whom" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="secondary_phone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="secondary_phone" class="form-control" />
+                <span asp-validation-for="secondary_phone" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="secondary_phone_type" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="secondary_phone_type" class="form-control" />
+                <span asp-validation-for="secondary_phone_type" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="street_address" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="street_address" class="form-control" />
+                <span asp-validation-for="street_address" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="stte" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="stte" class="form-control" />
+                <span asp-validation-for="stte" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="suffix" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="suffix" class="form-control" />
+                <span asp-validation-for="suffix" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="zip_code" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="zip_code" class="form-control" />
+                <span asp-validation-for="zip_code" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

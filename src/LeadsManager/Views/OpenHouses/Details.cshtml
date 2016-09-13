@@ -1,0 +1,222 @@
+@model LeadsManager.Models.OpenHouse
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OpenHouse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ad_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ad_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.apartment_number)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apartment_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.confirm_email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.confirm_email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email_address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email_address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.employer_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.employer_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.employer_name_other)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.employer_name_other)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.first_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.first_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.how_did_you_hear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.how_did_you_hear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.maiden_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.maiden_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.middle_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.middle_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.military_branch)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.military_branch)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.name_of_event)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name_of_event)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.name_of_state)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name_of_state)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.open_house_session)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.open_house_session)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.other_country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.other_country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.primary_phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.primary_phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.primary_phone_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.primary_phone_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.program_concentration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.program_concentration)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.program_degree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.program_degree)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.programs_interested)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.programs_interested)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_source)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_source)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referred_by)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referred_by)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referred_by_whom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referred_by_whom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.secondary_phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.secondary_phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.secondary_phone_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.secondary_phone_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.street_address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.street_address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.stte)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.stte)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.suffix)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.suffix)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.zip_code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.zip_code)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

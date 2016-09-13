@@ -1,0 +1,107 @@
+@model IEnumerable<LeadsManager.Models.Talisma>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.bHasAttachment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mMsgContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nAliasID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nDeliveryStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nEventID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nLanguageID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nMailType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nTeamID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tBcc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tCc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tSubject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tTo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.bHasAttachment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mMsgContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nAliasID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nDeliveryStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nEventID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nLanguageID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nMailType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nTeamID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tBcc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tCc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tSubject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tTo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.aSyncMailID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.aSyncMailID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.aSyncMailID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

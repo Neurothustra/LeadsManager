@@ -1,0 +1,256 @@
+@model LeadsManager.Models.Inquiry
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Inquiry</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ad_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ad_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.apartment_number)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apartment_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.confirm_email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.confirm_email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.diploma_or_ged)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.diploma_or_ged)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email_address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email_address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.evaluation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.evaluation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.first_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.first_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.how_did_you_hear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.how_did_you_hear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.how_soon_start)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.how_soon_start)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.maiden_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.maiden_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.middle_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.middle_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.military)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.military)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.name_of_event)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name_of_event)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.other_country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.other_country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.previously_attended)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.previously_attended)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.primary_phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.primary_phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.primary_phone_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.primary_phone_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.program_concentration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.program_concentration)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.program_degree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.program_degree)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.programs_interested)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.programs_interested)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_employer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_employer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_other_employer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_other_employer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_other_school)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_other_school)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_school)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_school)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referral_source)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referral_source)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referred_by)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referred_by)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.referred_by_whom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.referred_by_whom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.secondary_phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.secondary_phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.secondary_phone_type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.secondary_phone_type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.state_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.state_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.street_address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.street_address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.stte)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.stte)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.suffix)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.suffix)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.zip_code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.zip_code)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

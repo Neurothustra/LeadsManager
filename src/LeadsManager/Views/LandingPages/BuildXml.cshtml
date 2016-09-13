@@ -1,0 +1,28 @@
+@model LandingPage
+
+@{
+    ViewData["Title"] = "BuildXml";
+}
+
+<h2>Build Xml</h2>
+
+<p>
+    <button class="btn" data-clipboard-target="#generatedXml">
+        Copy to clipboard
+    </button>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</p>
+
+<h2>
+    <span>Landing Page XML for</span> @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)
+</h2>
+<div id="generatedXml" class="well">@ViewBag.Xml</div>
+
+@section scripts{
+    <script>
+        new Clipboard(".btn");
+    </script>
+}

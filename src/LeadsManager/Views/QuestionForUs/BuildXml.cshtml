@@ -1,0 +1,28 @@
+@model QuestionForUs
+
+@{
+    ViewData["Title"] = "BuildXml";
+}
+
+<h2>Build Xml</h2>
+
+<p>
+    <button class="btn" data-clipboard-target="#generatedXml">
+        Copy to clipboard
+    </button>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</p>
+
+<h2>
+    <span>Question For Us XML for</span> @Html.DisplayFor(model => model.text_field_controller) @Html.DisplayFor(model => model.text_field_controller_0)
+</h2>
+<div id="generatedXml" class="well">@ViewBag.Xml</div>
+
+@section scripts{
+    <script>
+        new Clipboard(".btn");
+    </script>
+}

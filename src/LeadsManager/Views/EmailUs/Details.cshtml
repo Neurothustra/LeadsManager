@@ -1,0 +1,66 @@
+@model LeadsManager.Models.EmailUs
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmailUs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSynced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsSynced)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dropdown_list_field_controller)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dropdown_list_field_controller)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pragraph_text_field_controller)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pragraph_text_field_controller)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.text_field_controller)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.text_field_controller)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.text_field_controller_0)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.text_field_controller_0)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.text_field_controller_1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.text_field_controller_1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.text_field_controller_2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.text_field_controller_2)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
