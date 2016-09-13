@@ -1,4 +1,4 @@
-# LeadsManger
+# Leads Manager
 A microservice used in the retrieval of leads (in this example, higher education student prospects) data from multiple sources, such as a CMS along with internal legacy databases, and converting that data to a specific XML schema for use with Talisma.
 .Net Core was used to rebiuld the revious version of the app into this iteration, both for fun as well as seeing how well a .Net Core application would work in a prodcution environment.
 
